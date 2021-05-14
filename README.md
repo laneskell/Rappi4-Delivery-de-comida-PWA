@@ -1,4 +1,6 @@
 ### <p align="center">💻 LabeFood 7 💻</p>
+![image](https://user-images.githubusercontent.com/77758983/118337542-67b20900-b4ea-11eb-80fa-6bea5fb39d39.png)
+
 
 Teste em :
 https://rappilaneskell.vercel.app/
@@ -24,8 +26,9 @@ Em um artigo da Microsoft, os autores definem brevemente o que seria o PWA:
 
 ### Prints 🎨
 
+<video src="https://user-images.githubusercontent.com/77758983/118336682-8d3e1300-b4e8-11eb-9b2b-9ee17c474a06.mp4" autoplay >
+</video>
 
-https://user-images.githubusercontent.com/77758983/118336682-8d3e1300-b4e8-11eb-9b2b-9ee17c474a06.mp4
 
 
 
