@@ -3,6 +3,7 @@ import { primaryColor } from "../../constants/colors";
 
 export const Container = styled.div`
   width: clamp(340px, 100vw, 900px);
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-self: center;

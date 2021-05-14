@@ -34,7 +34,7 @@ const GlobalState = (props) => {
         } 
         
         setCart(newCart);
-        alert(`${newItem[0].name} foi adicionado ao seu carrinho!`);
+      
      
       } else {
         setCardClearCart(true)
@@ -50,7 +50,7 @@ const GlobalState = (props) => {
       } 
       
       setCart(newCart);
-      alert(`${newItem[0].name} foi adicionado ao seu carrinho!`);
+     
 
     }
    

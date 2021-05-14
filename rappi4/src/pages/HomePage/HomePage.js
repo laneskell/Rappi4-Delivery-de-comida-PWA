@@ -166,13 +166,15 @@ export default HomePage;
 
 const FullScreen = styled.div`
   width: clamp(340px, 100vw, 900px);
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+
   justify-self:center;
   align-self:center;
   align-items:center;
   height: 100%;
+  min-height:100vh;
   overflow: hidden;
 `;
 const DivCards = styled.div`

@@ -78,7 +78,7 @@ const ProfilePage = () => {
   };
 
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
+    <div style={{   backgroundColor: "#fff", display: "flex", justifyContent: "center" }}>
     <div>
       <PostCardContainer>
         <PostCardContent>
