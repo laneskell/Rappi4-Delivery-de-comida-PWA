@@ -2,9 +2,15 @@
 
 Teste em :
 https://rappilaneskell.vercel.app/
+Recomendo acessar por mobile.
 
 
 ### Funcionamento 🛠
+Projeto tem funcionalidades de pedir comida por aplicativo (como a Rappi ou Ifood), mas esse projeto está "pensado" em PWA  .
+O que é PWA? uma metodologia de desenvolvimento que busca trazer para as soluções digitais, acessadas por navegadores em um dispositivo mobile e desktop, a mesma experiência vivenciada por um usuário em um aplicativo nativo.
+Em um artigo da Microsoft, os autores definem brevemente o que seria o PWA:
+[..] Progressive Web Apps são somente bons websites que podem se comportar como aplicativos nativos — ou, talvez, Progressive Web Apps são somente bons apps, alimentado pelas tecnologias Web e entregues com a estrutura Web.
+
 
 - [x] Login e cadastro de usuários
 - [x] Home com a lista de restaurantes, possibilitando filtro por categoria ou pesquisa
@@ -14,7 +20,12 @@ https://rappilaneskell.vercel.app/
 - [x] Atualização de perfil
 - [x] Histórico de pedidos
 
+
+
 ### Prints 🎨
+
+
+https://user-images.githubusercontent.com/77758983/118336682-8d3e1300-b4e8-11eb-9b2b-9ee17c474a06.mp4
 
 
 
@@ -37,8 +48,6 @@ https://rappilaneskell.vercel.app/
 
 ***
 
-![image](https://user-images.githubusercontent.com/60359003/117515686-58244480-af6d-11eb-86a7-fbcb25787ef5.png)
-***
 
-![image](https://user-images.githubusercontent.com/60359003/117515696-5e1a2580-af6d-11eb-83f6-37d62f068b40.png)
+
 
