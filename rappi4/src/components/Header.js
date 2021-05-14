@@ -10,35 +10,6 @@ import { goToLoginPage, goToPreviousPage } from "../routes/coordinator";
 import { useHistory } from "react-router-dom";
 import GlobalStateContext from "../global/GlobalStateContext";
 
-export const BackImage = styled.img`
-  width: 5vw;
-  max-width: 50px;
-`;
-
-export const LogoutIcon = styled.img`
-  width: 5vw;
-  max-width: 50px;
-  cursor: pointer;
-`;
-
-const useStyles = makeStyles((theme) => ({
-  appBarMod: {
-    backgroundColor: "#FFFF",
-    boxShadow: "0 0.5px 0 0 rgba(0, 0, 0, 0.25)",
-    height: '8vh',
-    display: 'flex',
-    justifyContent: 'center',
-  },
-  typography: {
-    flexGrow: 1,
-    textAlign: "center",
-    paddingRight: 30.75,
-  },
-  typographywithoutBack: {
-    flexGrow: 1,
-    textAlign: "center",
-  },
-}));
 
 const Header = () => {
   const history = useHistory();
@@ -48,6 +19,8 @@ const Header = () => {
 
 
   return (
+    <div style={{ display: "flex", justifyContent: "center" }}>
+    <ContainerHeader>
     <div className={classes.root}>
       <AppBar position="static" className={classes.appBarMod}>
         <Toolbar variant="dense" className={classes.toolbarMod}>
@@ -84,7 +57,48 @@ const Header = () => {
         </Toolbar>
       </AppBar>
     </div>
+    </ContainerHeader>
+    </div>
   );
 };
 
 export default Header;
+
+export const ContainerHeader = styled.div`
+  width: clamp(340px, 100vw, 900px);
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:flex-start;
+`;
+
+export const BackImage = styled.img`
+  width: 5vw;
+  max-width: 50px;
+`;
+
+export const LogoutIcon = styled.img`
+  width: 5vw;
+  max-width: 50px;
+  cursor: pointer;
+`;
+
+const useStyles = makeStyles((theme) => ({
+  appBarMod: {
+    backgroundColor: "#FFFF",
+    boxShadow: "0 0.1px   rgba(0, 0, 0, 0.25)",
+    height: '8vh',
+    display: 'flex',
+    justifyContent: 'center',
+    width:"clamp(340px, 100vw, 900px)",
+  },
+  typography: {
+    flexGrow: 1,
+    textAlign: "center",
+    paddingRight: 30.75,
+  },
+  typographywithoutBack: {
+    flexGrow: 1,
+    textAlign: "center",
+  },
+}));

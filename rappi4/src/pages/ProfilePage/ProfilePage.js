@@ -78,6 +78,7 @@ const ProfilePage = () => {
   };
 
   return (
+    <div style={{ display: "flex", justifyContent: "center" }}>
     <div>
       <PostCardContainer>
         <PostCardContent>
@@ -137,6 +138,7 @@ const ProfilePage = () => {
           Sair
         </Button>
       </Box>
+    </div>
     </div>
   );
 };

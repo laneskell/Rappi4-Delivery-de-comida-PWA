@@ -133,7 +133,7 @@ const CartPage = () => {
     
 
     return (
-
+<div style={{ display: "flex", justifyContent: "center" }}>
       <Height> 
 
         <div> 
@@ -177,6 +177,7 @@ const CartPage = () => {
 
 
       </Height>
+      </div>
 
     );
   }

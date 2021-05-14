@@ -15,7 +15,7 @@ export const ScreenContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: clamp(340px, 100vw, 900px);
   margin-top: 3vh;
 `;
 
@@ -79,6 +79,7 @@ const AddressPage = () => {
   };
 
   return (
+    <div style={{ display: "flex", justifyContent: "center" }}>
     <ScreenContainer>
       <Typography variant="h5">Meu Endereço</Typography>
       <InputsContainer>
@@ -169,6 +170,7 @@ const AddressPage = () => {
       </InputsContainer>
       <AlertModified />
     </ScreenContainer>
+    </div>
   );
 };
 

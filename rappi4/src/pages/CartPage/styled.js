@@ -6,6 +6,7 @@ import {
 } from '../../constants/colors'
 
 export const Height = styled.div` 
+  width: clamp(340px, 100vw, 900px);
   min-height: 84vh;
   display: flex;
   justify-content: space-between;

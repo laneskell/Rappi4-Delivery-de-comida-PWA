@@ -8,8 +8,8 @@ import GlobalState from "./global/GlobalState";
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <GlobalState>
-        <Router />
+      <GlobalState >
+        <Router className="screenAllPagesPWA"  />
       </GlobalState>
     </ThemeProvider>
   );

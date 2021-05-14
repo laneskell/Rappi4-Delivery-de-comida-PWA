@@ -22,7 +22,7 @@ display: flex;
 justify-content:space-around;
 align-items:center;
 height: 8vh;
-width:100vw;
+width: clamp(340px, 100vw, 900px);
 background-color: #FFFF;
 z-index:10;
 position: fixed;
@@ -40,6 +40,7 @@ const Footer = () => {
 
 
     return (
+        <div style={{ display: "flex", justifyContent: "center" }}>
         <HideScroll variant="down">
 
 
@@ -50,6 +51,7 @@ const Footer = () => {
             </Container>
 
         </HideScroll>
+        </div>
 
     );
 };

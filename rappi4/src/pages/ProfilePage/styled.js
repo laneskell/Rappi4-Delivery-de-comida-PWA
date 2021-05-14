@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const PostCardContainer = styled.div`
   
-  width: 60vw;
+  width: clamp(340px, 100vw, 900px);
   margin: 5%;
   @media screen and (max-width: 992px) {
     width: 80vw;
@@ -44,4 +44,6 @@ export const CardRes = styled.div`
 
 export const CardColor = styled.div`
   background-color: #eeeeeb;
+
+
 `

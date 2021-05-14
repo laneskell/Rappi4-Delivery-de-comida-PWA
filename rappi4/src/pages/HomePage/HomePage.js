@@ -12,32 +12,6 @@ import CategoryCard from "../../components/CategoryCard/CategoryCard";
 import Loader from "../../components/Loader";
 import StatusOrder from "./StatusOrder";
 
-const FullScreen = styled.div`
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-`;
-const DivCards = styled.div`
-  margin: 10px 2%;
-`;
-
-const DivCategories = styled.div`
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-`;
-
-const DivInput = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 0 20px;
-`;
-
-const DivVazia = styled.div`
-  text-align: center;
-  color: grey;
-  margin-top: 50px;
-`;
 
 const HomePage = () => {
   useProtectedPage();
@@ -153,8 +127,9 @@ const HomePage = () => {
   };
 
   return (
-    <FullScreen>
-      <DivInput>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+    <FullScreen  >
+      <DivInput >
         <TextField
           name={"search"}
           value={search}
@@ -182,7 +157,43 @@ const HomePage = () => {
       )}
       {activeOrder != null ? <StatusOrder activeOrder={activeOrder} /> : ""}
     </FullScreen>
+    </div>
   );
 };
 
 export default HomePage;
+
+
+const FullScreen = styled.div`
+  width: clamp(340px, 100vw, 900px);
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  justify-self:center;
+  align-self:center;
+  align-items:center;
+  height: 100%;
+  overflow: hidden;
+`;
+const DivCards = styled.div`
+  margin: 10px 2%;
+  
+`;
+
+const DivCategories = styled.div`
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+`;
+
+const DivInput = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+`;
+
+const DivVazia = styled.div`
+  text-align: center;
+  color: grey;
+  margin-top: 50px;
+`;
